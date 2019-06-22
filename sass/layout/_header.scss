@@ -1,0 +1,84 @@
+.header{
+    position: relative;
+    
+    .item-1,
+    .item-2{
+        height: 80vh;
+            img{
+                width: 100%;
+                height: auto;
+            }   
+        &__content{
+            background: $color-white;
+            @include absCenter;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            top: 75%;
+            span{
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $color-orange-light;
+            }
+            a:link,
+            a:visited{
+                color:$color-grey;
+                text-decoration: none;
+                &:hover,
+                &:active{
+                    color:$color-green;
+                }
+            }
+            &__rating,
+            &__status{
+                list-style: none;
+                display: inline-flex;
+              
+                i{
+                    color: $color-yellow;
+                   &:last-child{
+                       margin-right: 1rem;
+                   }
+                }
+                
+            }
+            &__status{
+                li{
+                    margin-right: 1rem;
+                }
+                i{
+                    color: $color-orange;
+                }
+            }
+           
+        }
+    }
+    .container{
+        position: relative;
+        .owl-nav{
+            position: absolute;
+            top: 50%;
+            z-index: 50;
+            display: inline-flex;
+            width: 97%;
+            justify-content: space-between;
+            .customPrevBtn,
+            .customNextBtn{
+                background:$color-white;
+                padding: 2rem 1.8rem;
+                border: transparent;
+                border-radius: 50%;
+                outline: none;
+                &:hover{
+                    background: rgb(255, 42, 42);
+                    color: #fff;
+                }
+            }
+        }
+        @include respond(phone){
+            .owl-nav{
+                display: none;
+            }
+        }
+    }
+   
+}

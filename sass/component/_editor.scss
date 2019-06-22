@@ -1,0 +1,65 @@
+.editor{
+    .heading{
+        h2{
+            text-transform: uppercase;
+        }
+        div{
+            max-width: 100%;
+            
+            height: 1px;
+            background: $color-grey-light;
+            margin-top: 2rem;
+            position: relative;
+            &::before{
+                position: absolute;
+                content:"";
+                width: 10%;
+                height: 5px;
+                top: -2px;
+                background: $color-orange-light;
+            }
+        }
+    }
+    .contents{
+       
+        .img{
+           
+            position: relative;
+           
+            .editor-info {
+                background: linear-gradient(to left bottom, rgba(1, 3, 3, 0.815),rgba(10, 10, 10, 0.904));
+                position: absolute;
+                
+                left: 0;
+                bottom: 0;
+                color: $color-white;
+                display: inline-flex;
+                align-items: flex-end;
+              span{
+                  font-size: 1.3rem;
+              }
+              
+              .break-1__rating{
+                  i{
+                    font-size: 1.8rem;
+                  }
+                  
+                  a{
+                    color: $color-white;
+                    font-size: 1.3rem;
+                  }
+              }
+              .break-1__status{
+                i{
+                    font-size: 1.8rem;
+                  }
+                  
+                  a{
+                    color: $color-white;
+                    font-size: 1.3rem;
+                  }
+            }
+            }
+        }
+    }
+}

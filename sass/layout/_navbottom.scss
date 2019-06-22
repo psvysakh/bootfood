@@ -1,0 +1,37 @@
+.navbar-bottom{
+  
+    .nav-second{
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            list-style: none;
+            display: inline-flex;
+            li{
+                
+                a{
+                    font-size: 1.7rem;
+                    color: $color-grey-light;
+                }
+            }
+        }
+        img{
+            height: 60px;
+            width: auto;
+        }
+        .cart{
+            a{
+                font-size: 1.7rem;
+                color: $color-grey-light;
+                &:first-child{
+                    border-right: 1px solid #ccc;
+                }
+            }
+
+        }
+    }
+           
+    
+    
+}

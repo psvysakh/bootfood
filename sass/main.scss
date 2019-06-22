@@ -1,0 +1,23 @@
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "layout/navbottom";
+@import "layout/_navigation";
+@import "layout/header";
+@import "layout/footer";
+
+@import "component/button";
+@import "component/_breakfast";
+@import "component/trending";
+@import "component/editor";
+@import "component/popular";
+@import "component/galleryend";
+
+@import "pages/home";

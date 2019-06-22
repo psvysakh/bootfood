@@ -1,0 +1,27 @@
+.btn{
+    padding: 1rem 2rem;
+    background: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    color:$color-white;
+    border-radius: 0.5rem;
+}
+.btn-subscribe{
+    background: $color-orange-light;
+}
+.btn-gallery{
+    @include absCenter;
+    padding: 1.5rem 6rem;
+    color: $color-black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+    &:hover{
+        background: $color-orange-light;
+        color:$color-white;
+    }
+    @include respond(phone){
+        .btn-gallery{
+            padding: 1rem 4rem;
+        }
+    }
+}
